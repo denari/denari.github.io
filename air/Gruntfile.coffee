@@ -6,24 +6,24 @@ module.exports = (grunt) ->
       dest:
         files: [
           expand: true
-          cwd: 'public_html'
+          cwd: 'src'
           src: ['*.slim', '!_*.slim']
-          dest: 'public_html/dest'
+          dest: ''
           ext: '.html'
         ]
 
     stylus:
       dest:
-        src: ['public_html/css/style.styl']
-        dest: 'public_html/dest/css/style.css'
+        src: ['src/css/style.styl']
+        dest: 'css/style.css'
       ie:
-        src: 'public_html/css/ie.styl'
-        dest: 'public_html/dest/css/ie.css'
+        src: 'src/css/ie.styl'
+        dest: 'css/ie.css'
 
     browserify:
       dest:
         files:
-          'public_html/dest/js/main.js': 'public_html/js/*.coffee'
+          'js/main.js': 'src/js/*.coffee'
         options:
           transform: ['coffeeify', 'debowerify']
           browserifyOptions:
@@ -32,49 +32,42 @@ module.exports = (grunt) ->
     uglify:
       dest:
         files:
-          'public_html/dest/js/main.min.js':
-            'public_html/dest/js/main.js'
+          'js/main.min.js':
+            'js/main.js'
 
     copy:
       image:
         files: [
           expand: true
-          cwd: "public_html/image"
+          cwd: "src/image"
           src: "**"
-          dest: "public_html/dest/image"
-        ]
-      jslibs:
-        files: [
-          expand: true
-          cwd: "public_html/js/libs"
-          src: "**"
-          dest: "public_html/dest/js/libs"
+          dest: "image"
         ]
 
     clean:
-      css: ['public_html/css/*.css']
+      css: ['src/css/*.css']
 
     connect:
       server:
         options:
           port: 9100
-          base: '../../hyaku/front/'
+          base: ''
 
     watch:
       stylus:
-        files: ['public_html/css/*.styl', 'public_html/css/**/*.styl']
+        files: ['src/css/*.styl', 'src/css/**/*.styl']
         tasks: ['stylus', 'clean']
       slim:
-        files: ['public_html/*.slim', 'public_html/**/*.slim']
+        files: ['src/*.slim', 'src/**/*.slim']
         tasks: ['slim']
       coffee:
-        files: ['public_html/js/*.coffee']
+        files: ['src/js/*.coffee']
         tasks: ['browserify', 'uglify']
       image:
-        files: 'public_html/image/*'
+        files: 'src/image/*'
         tasks: ['copy']
       jslibs:
-        files: 'public_html/js/libs/*'
+        files: 'src/js/libs/*'
         tasks: ['copy']
       options:
         livereload: true
