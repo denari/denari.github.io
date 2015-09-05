@@ -1,0 +1,59 @@
+.menuBar
+  border-radius 0
+  background menu_bar_bg
+  color white
+  border-bottom menu_bar_border
+  margin-bottom 0
+  a
+    color white
+  &__nav
+    > li
+      & > a:hover , & > a:active , & > a:focus
+        background menu_list_hover_bg !important
+      > a
+        padding 13px 0
+        span
+          display inline-block
+          padding 2px 10px
+          text-decoration underline
+  &__contactButton
+    background menu_contact_bg
+    border-radius 3px 3px 4px 4px
+    box-shadow 0px 2px 0px rgba(0,0,0,.25)
+    border-bottom menu_contact_border
+    text-align center
+    a
+      display block
+      padding 5px 15px
+  &__telephone
+    margin-right 15px !important
+    &:before
+      content ''
+      background url('../image/tell.png')
+      background-position bottom center
+      background-size contain
+      background-repeat no-repeat
+      display inline-block
+      height 12px
+      width 20px
+      margin 0 10px 0 0
+
+.menuHeader
+  &__brand
+    padding 10px
+    img
+      height 30px
+  &__navToggle
+    .icon-bar
+      background-color menu_toggle_button_color
+
+
+// # 768pxより横幅が小さい画面サイズでの指定
+
+@media screen and (max-width 767px)
+  .brandBar
+    &__snsButtons
+      display none
+
+  .jumbotron__catch--keysentence
+    font-size 46px
