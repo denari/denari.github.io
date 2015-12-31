@@ -25,7 +25,7 @@ gulp.task 'default', ->
   gulp.run 'watch'
 
 gulp.task 'jade', ->
-  gulp.src gusrc_dir + '/*.jade'
+  gulp.src src_dir + '/*.jade'
     .pipe plumber()
     .pipe jade
       pretty : true
