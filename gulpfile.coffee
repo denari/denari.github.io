@@ -45,7 +45,7 @@ gulp.task 'riot', ->
     .transform riotify, {}
     .bundle()
     .pipe source 'main.js'
-    .pipe gulp.dest dest_dir + 'scripts'
+    .pipe gulp.dest dest_dir + '/scripts'
 
 gulp.task 'copy/images', ->
   gulp.src src_dir + '/images/**'
