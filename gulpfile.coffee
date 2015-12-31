@@ -63,5 +63,5 @@ gulp.task 'watch', ->
   gulp.watch(src_dir + '/**/*.jade', ['jade'])
   gulp.watch(src_dir + '/styles/style.styl', ['stylus'])
   gulp.watch(src_dir + '/styles/**/*.styl', ['stylus'])
-  gulp.watch(src_dir + '/scripts/**', ['copy/scripts'])
+  gulp.watch(src_dir + '/scripts/**', ['riot'])
   gulp.watch(src_dir + '/images/**', ['copy/images'])
