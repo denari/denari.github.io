@@ -3,8 +3,9 @@ include ./includes/_menu.jade
 doctype html
 html
   head
-    //- include ./includes/_head.jade
+    include ./includes/_head.jade
     title denari.link
   body(class="#{page_name}")
-    img(src="images/de.svg", alt="denari.link")
-    +menu(page_name)
+    header.mainHeader
+      img(src="images/de.svg" alt="denari.link").mainHeader__logo
+      +menu(page_name)
