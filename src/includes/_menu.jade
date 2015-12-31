@@ -1,0 +1,8 @@
+mixin menu(page_name)
+  nav.mainNavigation
+    ul
+      - var menu_array = ["top", "about me", "blog", "code", "design"]
+      for menu in menu_array
+        if page_name != menu
+          li
+            a(href=menu+".html")=menu

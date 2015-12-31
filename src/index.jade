@@ -1,0 +1,10 @@
+include ./includes/_menu.jade
+- var page_name = "top"
+doctype html
+html
+  head
+    //- include ./includes/_head.jade
+    title denari.link
+  body(class="#{page_name}")
+    img(src="images/de.svg", alt="denari.link")
+    +menu(page_name)
