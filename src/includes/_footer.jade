@@ -1,9 +1,14 @@
 footer.mainFooter
   img.mainFooter__logo(src="images/de_black.svg",   alt="denari01")
-  img.mainFooter__social(src="images/facebook.svg", alt="facebook")
-  img.mainFooter__social(src="images/twitter.svg",  alt="twitter")
-  img.mainFooter__social(src="images/wantedly.svg", alt="wantedly")
-  img.mainFooter__social(src="images/github.svg",   alt="github")
+  .mainFooter__socials
+    a.mainFooter__social(href="https://facebook.com/denari01")
+      img(src="images/facebook.svg", alt="facebook")
+    a.mainFooter__social(href="https://twitter.com/denari01")
+      img(src="images/twitter.svg",  alt="twitter")
+    a.mainFooter__social(href="https://www.wantedly.com/users/3087522")
+      img(src="images/wantedly.svg", alt="wantedly")
+    a.mainFooter__social(href="https://github.com/denari")
+      img(src="images/github.svg",   alt="github")
   small.mainFooter__copyright
-    | &copy; 2015
+    | &copy; 2015 
     a(href="http://denari.link") denari01
