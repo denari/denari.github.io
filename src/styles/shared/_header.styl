@@ -1,25 +1,38 @@
 .mainHeader
-  background-color #08c
-  display          block
+  display    block
+  min-height     420px
   .top &
-    height       100%
+    height     100%
+    background top-bg
+  .about_me &
+    padding-top 120px
+    background  about-me-bg
   &__logo
     display    block
     text-align center
     height     165px
     width      230px
     margin     0 auto
-    position   relative
-    top        30%
+    .top &
+      position relative
+      top      30%
+  &__title
+    text-align  center
+    font-weight bold
+    font-size   40px
+    color       page-title-font-color
+    margin      30px 0 110px
 
 .mainNavigation
   ul
-    margin     0 auto
-    display    block
-    text-align center
-    position   fixed
-    bottom     50px
-    width      100%
+    margin      0 auto
+    display     block
+    text-align  center
+    width       100%
+    padding-top 20px
+    .top &
+      bottom     50px
+      position    fixed
   li
     display inline-block
     margin 0 30px 20px
