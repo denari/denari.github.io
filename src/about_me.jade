@@ -1,0 +1,14 @@
+include ./includes/_menu.jade
+- var page_name = "about me"
+doctype html
+html
+  head
+    include ./includes/_head.jade
+    title about me | denari.link
+  body(class="about_me")
+    header.mainHeader
+      img(src="images/a.svg" alt="about me").mainHeader__logo
+      h1=page_name
+      +menu(page_name)
+    article.content
+      include:md ./markdowns/about_me.md

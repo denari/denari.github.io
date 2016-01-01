@@ -121,10 +121,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html,
-body {
+html {
   height: 100%;
   font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+body.top {
+  height: 100%;
 }
 .mainHeader {
   background-color: #08c;
