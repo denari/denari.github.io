@@ -8,7 +8,8 @@ html
   body(class="about_me")
     header.mainHeader
       img(src="images/a.svg" alt="about me").mainHeader__logo
-      h1=page_name
+      h1.mainHeader__title=page_name
       +menu(page_name)
     article.content
       include:md ./markdowns/about_me.md
+    include ./includes/_footer.jade
