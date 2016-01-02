@@ -9,5 +9,7 @@ mixin menu(page_name)
               a(href="about_me.html")=menu
             else if menu === "top"
               a(href="index.html")=menu
+            else if menu === "blog"
+              a(href="http://denari01.hatenablog.com/" target="_blank")=menu
             else
               a(href=menu+".html")=menu
