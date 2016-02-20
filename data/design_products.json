@@ -1,0 +1,32 @@
+{
+  "products" : [
+    {
+      "name" : "kosen10s",
+      "tags" : [
+        "ロゴ",
+        "kosen10s",
+        "イベント"
+      ],
+      "description" : "高専に2010年に入学した人を集めた人で開催している同窓会に近い集まり。主にLT会(kosen10s LT)をやっていて、一応LT会の実行委員の一番えらい人をやっている。",
+      "thumbnail" : "images/kosen10s.svg",
+      "link" : "https://kosen10s.doorkeeper.jp/events/36741",
+      "start_date" : "2015-01",
+    },
+    {
+      "name" : "kosenconf-100tokyo",
+      "tags" : [
+        "ロゴ",
+        "フライヤー",
+        "ポスター",
+        "ちょっと変わったもの",
+        "イベント",
+        "kosenconf"
+      ],
+      "description" : "全国各地で開催されている高専カンファレンスの記念すべき100番目。ポスターからスタッフパーカー、会場内の案内用の壁紙に至るまで、多岐に渡ってデザインした。",
+      "thumbnail" : "images/100conf.svg",
+      "link" : "http://denari01.hatenablog.com/entry/2015/12/24/%E9%AB%98%E5%B0%82%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%82%92%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%99%E3%82%8B_%23kosenconf",
+      "start_date" : "2015-10",
+      "end_date" : "2015-12",
+    }
+  ]
+}
