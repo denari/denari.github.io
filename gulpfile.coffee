@@ -1,6 +1,7 @@
 # requires/dd
 gulp       = require 'gulp'
 jade       = require 'gulp-jade'
+data       = require 'gulp-data'
 stylus     = require 'gulp-stylus'
 server     = require 'gulp-webserver'
 koutoswiss = require 'kouto-swiss'
@@ -27,6 +28,8 @@ gulp.task 'default', ->
 gulp.task 'jade', ->
   gulp.src src_dir + '/*.jade'
     .pipe plumber()
+    .pipe data (file) ->
+      relativePath: file.history[0].replace file.base, ''
     .pipe jade
       pretty : true
     .pipe gulp.dest dest_dir
