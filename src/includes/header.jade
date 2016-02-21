@@ -1,0 +1,26 @@
+- classList = relativePath.match(/[a-zA-Z\_]+/g);
+- classList.pop();
+- title = classList[classList.length-1];
+- title = title.replace(/\_/, ' ').replace(/index/, 'about me');
+header.pageHeader
+  h1
+    img(src="images/de.svg" alt="denari.link")
+  nav.pageHeader__mainNavigation
+    ul
+      li
+        a(href="/index.html") about me
+      li
+        a(href="http://denari01.hatenablog.com") blog
+      li
+        a(href="/code.html") code
+      li
+        a(href="/design.html") design
+      li
+        a(href="/event.html") event
+      li
+        a(href="/presentation.html") presentation
+  h2
+    if classList.length < 2
+      img(src="images/#{title.replace(/\s/, '_')}.svg" alt="#{title}")
+    | #{title}
+  

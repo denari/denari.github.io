@@ -1,0 +1,14 @@
+- classList = relativePath.match(/[a-zA-Z\_]+/g);
+- classList.pop();
+- title = classList[classList.length-1];
+- title = title.replace(/\_/, ' ').replace(/index/, 'about me');
+doctype html
+html
+  head
+    include ./head.jade
+    title #{title} | denari.link
+  body(class="#{classList.join(' ')}")
+    include ./header.jade
+    block contents
+      | coming soon...
+    include ./footer.jade
