@@ -121,3 +121,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-family: Futura, 'Trebuchet MS', Avenir, Arial, sans-serif;
+}
+html {
+  color: #fff;
+  background-color: #333;
+}
+a {
+  color: #fff;
+}
+.pageHeader {
+  display: block;
+}
+.pageHeader__title {
+  height: 109px;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+.pageHeader__title img {
+  display: block;
+  margin: 18px auto 22px;
+  height: 69px;
+  width: 91px;
+}
+.pageHeader__mainNavigation {
+  display: block;
+  height: 109px;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainNavigation__list {
+  width: 40%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  height: 109px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.mainNavigation__list--right {
+  position: absolute;
+  right: 0;
+}
+.mainNavigation__list li a {
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+}
+.mainNavigation__list li a:hover {
+  text-decoration: underline;
+}
