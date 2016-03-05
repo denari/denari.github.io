@@ -1,5 +1,24 @@
 html
   color text-color
   background-color site-background-color
+
 a
   color text-color
+
+body
+  &:before
+    content          ""
+    background-image url('../images/denari.png')
+    background-size  cover
+    display          block
+    position         absolute
+    top              -20px
+    left             -20px
+    height           120%
+    width            120%
+    -webkit-filter   blur(5px)
+    -moz-filter      blur(5px)
+    -o-filter        blur(5px)
+    -ms-filter       blur(5px)
+    filter           blur(5px)
+    opacity          0.8;
