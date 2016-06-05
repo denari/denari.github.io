@@ -1,6 +1,6 @@
 # requires/dd
 gulp       = require 'gulp'
-jade       = require 'gulp-jade'
+pug       = require 'gulp-pug'
 data       = require 'gulp-data'
 stylus     = require 'gulp-stylus'
 server     = require 'gulp-webserver'
@@ -18,19 +18,19 @@ dest_dir = '.'
 
 # tasks
 gulp.task 'default', ->
-  gulp.run 'jade'
+  gulp.run 'pug'
   gulp.run 'stylus'
   gulp.run 'riot'
   gulp.run 'copy/images'
   gulp.run 'server'
   gulp.run 'watch'
 
-gulp.task 'jade', ->
-  gulp.src src_dir + '/*.jade'
+gulp.task 'pug', ->
+  gulp.src src_dir + '/*.pug'
     .pipe plumber()
     .pipe data (file) ->
       relativePath: file.history[0].replace file.base, ''
-    .pipe jade
+    .pipe pug
       pretty : true
     .pipe gulp.dest dest_dir
 
@@ -62,9 +62,9 @@ gulp.task 'server', ->
       port       : 9200
 
 gulp.task 'watch', ->
-  gulp.watch(src_dir + '/*.jade', ['jade'])
-  gulp.watch(src_dir + '/**/*.jade', ['jade'])
-  gulp.watch(src_dir + '/markdowns/*.md', ['jade'])
+  gulp.watch(src_dir + '/*.pug', ['pug'])
+  gulp.watch(src_dir + '/**/*.pug', ['pug'])
+  gulp.watch(src_dir + '/markdowns/*.md', ['pug'])
   gulp.watch(src_dir + '/styles/style.styl', ['stylus'])
   gulp.watch(src_dir + '/styles/**/*.styl', ['stylus'])
   gulp.watch(src_dir + '/scripts/**', ['riot'])
