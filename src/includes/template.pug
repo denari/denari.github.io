@@ -5,10 +5,10 @@
 doctype html
 html
   head
-    include ./head.jade
+    include ./head.pug
     title #{title} | denari.link
-  body(class="#{classList.join(' ')}")
-    include ./header.jade
+  body(class=classList.join(' '))
+    include ./header.pug
     block contents
       | coming soon...
-    include ./footer.jade
+    include ./footer.pug

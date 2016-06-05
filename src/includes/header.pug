@@ -22,7 +22,6 @@ header.pageHeader
         a(href="/presentation.html") presentation
   h2.pageHeader__pageTitle.pageTitle
     if classList.length < 2
-      img.pageTitle__icon(src="images/#{title.replace(/\s/, '_')}.svg"
-                          alt="#{title}")
+      img.pageTitle__icon(src="images/" + title.replace(/\s/, '_') + ".svg"
+                          alt=title)
     | #{title}
-  
