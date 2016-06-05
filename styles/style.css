@@ -121,3 +121,79 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-family: Futura, 'Trebuchet MS', Avenir, Arial, sans-serif;
+}
+html {
+  color: #fff;
+  background-color: #333;
+}
+a {
+  color: #fff;
+}
+body:before {
+  content: "";
+  background-image: url("../images/denari.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  height: 120%;
+  width: 120%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.pageHeader {
+  display: block;
+}
+.pageHeader__title {
+  height: 109px;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+.pageHeader__title img {
+  display: block;
+  margin: 18px auto 22px;
+  height: 69px;
+  width: 91px;
+}
+.pageHeader__mainNavigation {
+  display: block;
+  height: 109px;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainNavigation__list {
+  width: 40%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  height: 109px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.mainNavigation__list--right {
+  position: absolute;
+  right: 0;
+}
+.mainNavigation__list li a {
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+}
+.mainNavigation__list li a:hover {
+  text-decoration: underline;
+}
