@@ -12,13 +12,25 @@
 		display: block;
 		height: 100%;
 		background: #002233;
+		overflow: hidden;
+	}
+	body {
+	}
+	.wrapper {
+		height: calc(100% - 80px);
+		width: 600px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.wrapper::scrollbar {
+		 display: none;
 	}
 	textarea {
 		display: block;
-		height: calc(100% - 40px);
+		height: calc(100%);
 		margin: 0 auto;
-		padding: 10px;
-		box-sizing: border-box;
+		padding: 20px;
+		width: calc(100% + 20px);
 		font-size: 14px;
 		font-family: "CodeM";
 		background-color: #002233;
@@ -29,27 +41,30 @@
 	textarea:focus {
 		outline: 0;
 	}
-	div {
+	div.menu {
 		height: 40px;
 		line-height: 40px;
 		font-size: 10px;
-		text-align: center;
 		color: white;
 		background-color: #000000;
+		padding-left: 20px;
+		text-align: center;
 	}
-	div a {
+	div.menu a {
 		color: white;
 	}
 	</style>
 </head>
 <body>
-	<div>
+	<div class='menu'>
 		<a href="http://denari.link/textarea.html?key=nippou">nippou</a> /
 		<a href="http://denari.link/textarea.html?key=memo1">memo1</a> /
 		<a href="http://denari.link/textarea.html?key=memo2">memo2</a> /
 		<a href="http://denari.link/textarea.html?key=memo3">memo3</a>
 	</div>
-	<textarea name="memo" cols="80"></textarea>
+	<div class="wrapper">
+		<textarea name="memo" cols="80"></textarea>
+	</div>
 	<script>
 
 		function GetQueryString() {
