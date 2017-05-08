@@ -15,7 +15,7 @@
 	}
 	textarea {
 		display: block;
-		height: 100%;
+		height: calc(100% - 40px);
 		margin: 0 auto;
 		padding: 10px;
 		box-sizing: border-box;
@@ -29,9 +29,26 @@
 	textarea:focus {
 		outline: 0;
 	}
+	div {
+		height: 40px;
+		line-height: 40px;
+		font-size: 10px;
+		text-align: center;
+		color: white;
+		background-color: #000000;
+	}
+	div a {
+		color: white;
+	}
 	</style>
 </head>
 <body>
+	<div>
+		<a href="http://denari.link/textarea.html?key=nippou">nippou</a> /
+		<a href="http://denari.link/textarea.html?key=memo1">memo1</a> /
+		<a href="http://denari.link/textarea.html?key=memo2">memo2</a> /
+		<a href="http://denari.link/textarea.html?key=memo3">memo3</a>
+	</div>
 	<textarea name="memo" cols="80"></textarea>
 	<script>
 
