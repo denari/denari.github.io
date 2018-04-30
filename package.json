@@ -1,0 +1,24 @@
+{
+  "name": "denari.github.io",
+  "version": "1.0.0",
+  "description": "denari01's portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denari/denari.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denari/denari.github.io/issues"
+  },
+  "homepage": "https://github.com/denari/denari.github.io#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.7.1"
+  }
+}
